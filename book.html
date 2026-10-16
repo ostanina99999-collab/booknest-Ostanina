@@ -1,0 +1,121 @@
+<!-- Идея структуры: шаблон "Responsive book website" (Bedimcode). Разметка переписана для учебной работы. -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BookNest — Thousand Autumns Novel</title>
+</head>
+<body>
+    <header>
+        <a href="index.html">BookNest</a>
+        <nav aria-label="Основная навигация">
+            <ul>
+                <li><a href="index.html">Каталог</a></li>
+                <li><a href="book.html" aria-current="page">Карточка книги</a></li>
+                <li><a href="loan.html">Выдача книги</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <nav aria-label="Хлебные крошки">
+            <ol>
+                <li><a href="index.html">Каталог</a></li>
+                <li><a href="index.html">Новеллы</a></li>
+                <li aria-current="page">Thousand Autumns Novel</li>
+            </ol>
+        </nav>
+
+        <article>
+            <h1>Thousand Autumns Novel</h1>
+            <figure>
+                <img src="images/cover-1.webp" alt="Обложка книги «Thousand Autumns Novel»" width="300" height="450">
+            </figure>
+
+            <section aria-labelledby="specs-title">
+                <h2 id="specs-title">Характеристики</h2>
+                <dl>
+                    <dt>Автор</dt>
+                    <dd>Meng Xi Shi</dd>
+                    <dt>Жанр</dt>
+                    <dd>Новелла</dd>
+                    <dt>Год издания</dt>
+                    <dd><time datetime="2023">2023</time></dd>
+                    <dt>Страниц</dt>
+                    <dd>400</dd>
+                    <dt>Рейтинг</dt>
+                    <dd><data value="4.5">4,5 из 5</data></dd>
+                    <dt>Доступно экземпляров</dt>
+                    <dd>3 из 5</dd>
+                </dl>
+            </section>
+
+            <section aria-labelledby="desc-title">
+                <h2 id="desc-title">Описание</h2>
+                <p>Романтическая новелла о двух героях, чьи судьбы переплетаются в мире интриг и боевых искусств.</p>
+            </section>
+
+            <a href="loan.html">Взять на срок</a>
+        </article>
+
+        <section aria-labelledby="reviews-title">
+            <h2 id="reviews-title">Отзывы</h2>
+            <article>
+                <h3>Затягивает с первых глав</h3>
+                <p>Анна · <time datetime="2026-09-12">12 сентября 2026</time></p>
+                <p>Очень красивый язык и живые герои, прочитала за неделю.</p>
+            </article>
+            <article>
+                <h3>Хорошая история</h3>
+                <p>Дмитрий · <time datetime="2026-09-20">20 сентября 2026</time></p>
+                <p>Сюжет держит в напряжении до самого конца.</p>
+            </article>
+
+            <form action="book.html" method="get">
+                <fieldset>
+                    <legend>Новый отзыв</legend>
+                    <p>
+                        <label for="review-name">Ваше имя</label>
+                        <input type="text" id="review-name" name="name" required minlength="2" maxlength="50">
+                    </p>
+                    <p>
+                        <label for="review-rating">Оценка (1–5)</label>
+                        <input type="number" id="review-rating" name="rating" required min="1" max="5">
+                    </p>
+                    <p>
+                        <label for="review-text">Текст отзыва</label>
+                        <textarea id="review-text" name="text" required minlength="10" maxlength="1000" rows="5"></textarea>
+                    </p>
+                    <button type="submit">Отправить отзыв</button>
+                </fieldset>
+            </form>
+        </section>
+
+        <aside aria-labelledby="similar-title">
+            <h2 id="similar-title">Похожие книги</h2>
+            <ul>
+                <li><a href="book.html">Under the Oak Tree</a> — Suji Kim</li>
+                <li><a href="book.html">Тысячи Осеней</a> — автор</li>
+                <li><a href="book.html">Несравненный</a> — автор</li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        <p>BookNest — книжный клуб университета.</p>
+        <nav aria-label="Навигация в подвале">
+            <ul>
+                <li><a href="index.html">Каталог</a></li>
+                <li><a href="book.html">Карточка книги</a></li>
+                <li><a href="loan.html">Выдача книги</a></li>
+            </ul>
+        </nav>
+        <address>
+            Университетская библиотека<br>
+            Email: <a href="mailto:booknest@example.com">booknest@example.com</a>
+        </address>
+        <p><small>© 2026 BookNest</small></p>
+    </footer>
+</body>
+</html>
