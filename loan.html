@@ -1,3 +1,4 @@
+<!-- Идея структуры: шаблон "Responsive book website" (Bedimcode). Разметка переписана для учебной работы. -->
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -19,6 +20,7 @@
 
     <main>
         <h1>Выдача книги</h1>
+        <p>Заполните форму, и библиотекарь подтвердит выдачу.</p>
 
         <form action="loan.html" method="get">
             <fieldset>
@@ -92,10 +94,31 @@
             <button type="submit">Оформить выдачу</button>
             <button type="reset">Очистить</button>
         </form>
+
+        <aside aria-labelledby="rules-title">
+            <h2 id="rules-title">Правила выдачи</h2>
+            <ul>
+                <li>Для оформления нужен читательский билет.</li>
+                <li>Одновременно можно взять не больше 3 экземпляров.</li>
+                <li>Книгу нужно вернуть до выбранной даты.</li>
+            </ul>
+        </aside>
     </main>
 
     <footer>
-        <p>© 2026 BookNest — книжный клуб университета</p>
+        <p>BookNest — книжный клуб университета.</p>
+        <nav aria-label="Навигация в подвале">
+            <ul>
+                <li><a href="index.html">Каталог</a></li>
+                <li><a href="book.html">Карточка книги</a></li>
+                <li><a href="loan.html">Выдача книги</a></li>
+            </ul>
+        </nav>
+        <address>
+            Университетская библиотека<br>
+            Email: <a href="mailto:booknest@example.com">booknest@example.com</a>
+        </address>
+        <p><small>© 2026 BookNest</small></p>
     </footer>
 </body>
 </html>

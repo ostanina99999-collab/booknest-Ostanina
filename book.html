@@ -1,3 +1,4 @@
+<!-- Идея структуры: шаблон "Responsive book website" (Bedimcode). Разметка переписана для учебной работы. -->
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -43,6 +44,8 @@
                     <dd><time datetime="2023">2023</time></dd>
                     <dt>Страниц</dt>
                     <dd>400</dd>
+                    <dt>Рейтинг</dt>
+                    <dd><data value="4.5">4,5 из 5</data></dd>
                     <dt>Доступно экземпляров</dt>
                     <dd>3 из 5</dd>
                 </dl>
@@ -50,7 +53,7 @@
 
             <section aria-labelledby="desc-title">
                 <h2 id="desc-title">Описание</h2>
-                <p>Романтическая новелла в жанре уся о двух героях, чьи судьбы переплетаются в мире интриг и боевых искусств.</p>
+                <p>Романтическая новелла о двух героях, чьи судьбы переплетаются в мире интриг и боевых искусств.</p>
             </section>
 
             <a href="loan.html">Взять на срок</a>
@@ -93,14 +96,26 @@
             <h2 id="similar-title">Похожие книги</h2>
             <ul>
                 <li><a href="book.html">Under the Oak Tree</a> — Suji Kim</li>
-                <li><a href="book.html">Тысячи Осеней</a> — Мо Сянь Тун Сю</li>
-                <li><a href="book.html">Несравненный</a> — Мо Сянь Тун Сю</li>
+                <li><a href="book.html">Тысячи Осеней</a> — автор</li>
+                <li><a href="book.html">Несравненный</a> — автор</li>
             </ul>
         </aside>
     </main>
 
     <footer>
-        <p>© 2026 BookNest — книжный клуб университета</p>
+        <p>BookNest — книжный клуб университета.</p>
+        <nav aria-label="Навигация в подвале">
+            <ul>
+                <li><a href="index.html">Каталог</a></li>
+                <li><a href="book.html">Карточка книги</a></li>
+                <li><a href="loan.html">Выдача книги</a></li>
+            </ul>
+        </nav>
+        <address>
+            Университетская библиотека<br>
+            Email: <a href="mailto:booknest@example.com">booknest@example.com</a>
+        </address>
+        <p><small>© 2026 BookNest</small></p>
     </footer>
 </body>
 </html>
