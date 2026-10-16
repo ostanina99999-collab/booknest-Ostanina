@@ -1,0 +1,73 @@
+:root {
+    color-scheme: light dark;
+    --color-bg: #fbf6f1;
+    --color-surface: #fffdfa;
+    --color-tint: #f6e7e9;
+    --color-text: #3a2a2e;
+    --color-text-muted: #7a6468;
+    --color-primary: #8c2f4b;
+    --color-primary-hover: #6e2238;
+    --color-on-primary: #fffdfa;
+    --color-accent: #c98b9a;
+    --color-border: #e6d5d2;
+    --color-danger: #b42318;
+    --color-focus: #1f5f8b;
+    --space-1: 0.25rem;
+    --space-2: 0.5rem;
+    --space-3: 0.75rem;
+    --space-4: 1rem;
+    --space-5: 1.5rem;
+    --space-6: 2.5rem;
+    --radius-s: 0.25rem;
+    --radius-m: 0.375rem;
+    --font-body: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    --font-heading: Georgia, "Times New Roman", serif;
+    --font-size-body: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+    --font-size-small: 0.875rem;
+    --font-size-h3: 1.25rem;
+    --font-size-h2: clamp(1.25rem, 1.1rem + 0.75vw, 1.75rem);
+    --font-size-h1: clamp(1.75rem, 1.3rem + 1.8vw, 2.75rem);
+    --line-height: 1.65;
+    --line-height-tight: 1.2;
+    --weight-medium: 500;
+    --weight-bold: 700;
+    --tracking: 0.03em;
+    --shadow-1: 0 1px 3px rgb(90 40 55 / 0.1);
+    --shadow-2: 0 8px 20px rgb(90 40 55 / 0.16);
+    --shadow-cover: 0 3px 8px rgb(90 40 55 / 0.28);
+    --border: 1px solid var(--color-border);
+    --accent-width: 3px;
+    --focus-width: 3px;
+    --opacity-disabled: 0.5;
+    --transition: 150ms ease;
+    --touch-size: 2.75rem;
+    --card-min: 16rem;
+    --sidebar-basis: 16rem;
+    --content-basis: 40rem;
+    --grow-main: 999;
+    --container-max: 90rem;
+    --form-max: 40rem;
+    --measure: 40rem;
+    --cover-max: 15rem;
+    --ratio-cover: 2 / 3;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-bg: #1c1317;
+        --color-surface: #261a1f;
+        --color-tint: #33222a;
+        --color-text: #f3e7e4;
+        --color-text-muted: #bfa9ad;
+        --color-primary: #e6a1b5;
+        --color-primary-hover: #f2bccb;
+        --color-on-primary: #2a1219;
+        --color-accent: #b0687c;
+        --color-border: #433037;
+        --color-danger: #ff8f84;
+        --color-focus: #7cc4f0;
+        --shadow-1: 0 1px 3px rgb(0 0 0 / 0.5);
+        --shadow-2: 0 8px 20px rgb(0 0 0 / 0.6);
+        --shadow-cover: 0 3px 8px rgb(0 0 0 / 0.7);
+    }
+}
