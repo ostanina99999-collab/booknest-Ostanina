@@ -4,10 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>BookNest — Thousand Autumns Novel</title>
+    <link rel="stylesheet" href="styles/tokens.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/components.css">
 </head>
 <body>
-    <header>
-        <a href="index.html">BookNest</a>
+    <header class="site-header">
+        <a class="site-header__brand" href="index.html">BookNest</a>
         <nav aria-label="Основная навигация">
             <ul>
                 <li><a href="index.html">Каталог</a></li>
@@ -17,8 +21,8 @@
         </nav>
     </header>
 
-    <main>
-        <nav aria-label="Хлебные крошки">
+    <main class="page">
+        <nav class="breadcrumbs" aria-label="Хлебные крошки">
             <ol>
                 <li><a href="index.html">Каталог</a></li>
                 <li><a href="index.html">Новеллы</a></li>
@@ -26,7 +30,7 @@
             </ol>
         </nav>
 
-        <article>
+        <article class="card">
             <h1>Thousand Autumns Novel</h1>
             <figure>
                 <img src="images/cover-1.webp" alt="Обложка книги «Thousand Autumns Novel»" width="300" height="450">
@@ -34,7 +38,7 @@
 
             <section aria-labelledby="specs-title">
                 <h2 id="specs-title">Характеристики</h2>
-                <dl>
+                <dl class="facts">
                     <dt>Автор</dt>
                     <dd>Meng Xi Shi</dd>
                     <dt>Жанр</dt>
@@ -53,23 +57,23 @@
                 <p>Романтическая новелла в жанре уся о двух героях, чьи судьбы переплетаются в мире интриг и боевых искусств.</p>
             </section>
 
-            <a href="loan.html">Взять на срок</a>
+            <a class="btn" href="loan.html">Взять на срок</a>
         </article>
 
         <section aria-labelledby="reviews-title">
             <h2 id="reviews-title">Отзывы</h2>
-            <article>
+            <article class="card">
                 <h3>Затягивает с первых глав</h3>
                 <p>Анна · <time datetime="2026-09-12">12 сентября 2026</time></p>
                 <p>Очень красивый язык и живые герои, прочитала за неделю.</p>
             </article>
-            <article>
+            <article class="card">
                 <h3>Хорошая история</h3>
                 <p>Дмитрий · <time datetime="2026-09-20">20 сентября 2026</time></p>
                 <p>Сюжет держит в напряжении до самого конца.</p>
             </article>
 
-            <form action="book.html" method="get">
+            <form class="form" action="book.html" method="get">
                 <fieldset>
                     <legend>Новый отзыв</legend>
                     <p>
@@ -84,7 +88,7 @@
                         <label for="review-text">Текст отзыва</label>
                         <textarea id="review-text" name="text" required minlength="10" maxlength="1000" rows="5"></textarea>
                     </p>
-                    <button type="submit">Отправить отзыв</button>
+                    <button class="btn" type="submit">Отправить отзыв</button>
                 </fieldset>
             </form>
         </section>
@@ -99,7 +103,7 @@
         </aside>
     </main>
 
-    <footer>
+    <footer class="site-footer">
         <p>© 2026 BookNest — книжный клуб университета</p>
     </footer>
 </body>

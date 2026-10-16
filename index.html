@@ -4,10 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>BookNest — каталог книг</title>
+    <link rel="stylesheet" href="styles/tokens.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/components.css">
 </head>
 <body>
-    <header>
-        <a href="index.html">BookNest</a>
+    <header class="site-header">
+        <a class="site-header__brand" href="index.html">BookNest</a>
         <nav aria-label="Основная навигация">
             <ul>
                 <li><a href="index.html" aria-current="page">Каталог</a></li>
@@ -17,10 +21,10 @@
         </nav>
     </header>
 
-    <main>
+    <main class="page page--catalog">
         <h1>Каталог книг</h1>
 
-        <form action="index.html" method="get">
+        <form class="form filters" action="index.html" method="get">
             <fieldset>
                 <legend>Фильтры</legend>
                 <p>
@@ -48,84 +52,84 @@
                     <input type="checkbox" id="available" name="available" value="1">
                     <label for="available">Только доступные</label>
                 </p>
-                <button type="submit">Применить</button>
+                <button class="btn" type="submit">Применить</button>
             </fieldset>
         </form>
 
-        <section aria-labelledby="results-title">
+        <section class="results" aria-labelledby="results-title">
             <h2 id="results-title">Найдено книг: 6</h2>
             <ul>
                 <li>
-                    <article>
+                    <article class="card">
                         <figure>
                             <img src="images/cover-1.webp" alt="Обложка книги «Thousand Autumns Novel»" width="300" height="450">
                         </figure>
                         <h3><a href="book.html">Thousand Autumns Novel</a></h3>
                         <p>Meng Xi Shi · Новелла · <time datetime="2023">2023</time></p>
                         <p>Романтическая новелла о двух героях в мире интриг и боевых искусств.</p>
-                        <a href="loan.html">Взять на срок</a>
+                        <a class="btn" href="loan.html">Взять на срок</a>
                     </article>
                 </li>
                 <li>
-                    <article>
+                    <article class="card">
                         <figure>
                             <img src="images/cover-2.webp" alt="Обложка книги «Under the Oak Tree»" width="300" height="450">
                         </figure>
                         <h3><a href="book.html">Under the Oak Tree</a></h3>
                         <p>Suji Kim · Новелла · <time datetime="2022">2022</time></p>
                         <p>История любви в фэнтезийном мире, где судьба героев решается в одном дворце.</p>
-                        <a href="loan.html">Взять на срок</a>
+                        <a class="btn" href="loan.html">Взять на срок</a>
                     </article>
                 </li>
                 <li>
-                    <article>
+                    <article class="card">
                         <figure>
                             <img src="images/cover-3.webp" alt="Обложка книги «Безмолвное чтение»" width="300" height="450">
                         </figure>
                         <h3><a href="book.html">Безмолвное чтение</a></h3>
                         <p>Автор · Новелла · <time datetime="2022">2022</time></p>
                         <p>Детективная история о двух героях, расследующих загадочные дела.</p>
-                        <a href="loan.html">Взять на срок</a>
+                        <a class="btn" href="loan.html">Взять на срок</a>
                     </article>
                 </li>
                 <li>
-                    <article>
+                    <article class="card">
                         <figure>
                             <img src="images/cover-4.webp" alt="Обложка книги «Небесная собака»" width="300" height="450">
                         </figure>
                         <h3><a href="book.html">Небесная собака</a></h3>
                         <p>Автор · Новелла · <time datetime="2021">2021</time></p>
                         <p>Фэнтезийная история о двух героях и их необычной встрече.</p>
-                        <a href="loan.html">Взять на срок</a>
+                        <a class="btn" href="loan.html">Взять на срок</a>
                     </article>
                 </li>
                 <li>
-                    <article>
+                    <article class="card">
                         <figure>
                             <img src="images/cover-5.webp" alt="Обложка книги «Несравненный»" width="300" height="450">
                         </figure>
                         <h3><a href="book.html">Несравненный</a></h3>
                         <p>Автор · Новелла · <time datetime="2021">2021</time></p>
                         <p>Романтическая история о двух героях в древнем мире.</p>
-                        <a href="loan.html">Взять на срок</a>
+                        <a class="btn" href="loan.html">Взять на срок</a>
                     </article>
                 </li>
                 <li>
-                    <article>
+                    <article class="card">
                         <figure>
                             <img src="images/cover-6.webp" alt="Обложка книги «Тысячи Осеней»" width="300" height="450">
                         </figure>
                         <h3><a href="book.html">Тысячи Осеней</a></h3>
                         <p>Автор · Новелла · <time datetime="2023">2023</time></p>
                         <p>Продолжение истории о героях, пронесённой через осенние годы.</p>
-                        <a href="loan.html">Взять на срок</a>
+                        <a class="btn" href="loan.html">Взять на срок</a>
                     </article>
                 </li>
             </ul>
         </section>
     </main>
 
-    <footer>
+    <footer class="site-footer">
         <p>© 2026 BookNest — книжный клуб университета</p>
     </footer>
 </body>
