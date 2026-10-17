@@ -154,3 +154,7 @@
         opacity: var(--opacity-disabled);
         cursor: not-allowed;
     }
+.btn[aria-pressed="true"] {
+    background: var(--ink);
+    color: var(--paper);
+}
